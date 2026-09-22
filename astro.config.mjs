@@ -7,6 +7,6 @@ export default defineConfig({
 	base: '/ad-rem',
 	trailingSlash: 'always',
 	redirects: {
-		'/dobytok': '/polnohospodarstvo/#hovadzi-dobytok',
+		'/dobytok': '/ad-rem/polnohospodarstvo/#hovadzi-dobytok',
 	},
 });

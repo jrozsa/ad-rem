@@ -47,36 +47,6 @@ Odporúčané tlačidlá:
 
 Stránku je vhodné ukončiť reálnymi fotografiami farmy, zvierat a lesníckych prác spolu s výrazným kontaktným blokom.
 
-## 2. O nás
-
-### Účel stránky
-
-Predstaviť vlastníkov, históriu a dôveryhodnosť spoločnosti.
-
-### Úvodný text
-
-> **Poľnohospodárstvo, chov a práca v lese**
->
-> [Názov spoločnosti] pôsobí v Behynciach, mestskej časti Tornale v okrese Revúca. Spájame každodennú prácu na farme s poskytovaním lesníckych služieb.
->
-> Naša farma je súčasťou regiónu južného Gemera. Venujeme sa hospodáreniu na pôde a chovu hovädzieho dobytka. Lesnícke služby poskytujeme predovšetkým na juhozápadnom Slovensku.
-
-### Odporúčaný obsah
-
-- Ako a kedy spoločnosť vznikla
-- Mená vlastníkov a členov tímu
-- Roky skúseností
-- Veľkosť farmy, ak ju chce spoločnosť zverejniť
-- Druh chovaného dobytka
-- Používaná technika
-- Odborné oprávnenia a poistenie
-- Skutočné fotografie majiteľov a zamestnancov
-
-### Hodnoty spoločnosti
-
-> Zakladáme si na férovej dohode, spoľahlivom vykonaní práce a dlhodobých vzťahoch so zákazníkmi. Každú zákazku a každý obchod riešime individuálne.
-
-Nepoužívať nepodložené tvrdenia ako „najlepší“, „plne ekologický“ alebo „certifikovaný“, ak ich spoločnosť nevie preukázať.
 
 ## 3. Poľnohospodárstvo
 
@@ -101,17 +71,7 @@ Vysvetliť, čo farma produkuje, ako hospodári a kto môže jej produkciu odobe
 - Osobný odber a doprava
 - Mechanizačné služby, ak ich spoločnosť poskytuje
 
-### Výzva na kontakt
-
-> Máte záujem o našu produkciu alebo dlhodobú spoluprácu? Kontaktujte nás a informujte sa o aktuálnej dostupnosti.
-
-## 4. Hovädzí dobytok na predaj
-
-### Účel stránky
-
-Predstaviť aktuálne dostupné zvieratá a získavať priame dopyty od záujemcov.
-
-### Úvodný text
+### Hovädzí dobytok
 
 > **Hovädzí dobytok z nášho chovu**
 >
@@ -119,47 +79,11 @@ Predstaviť aktuálne dostupné zvieratá a získavať priame dopyty od záujemc
 >
 > Aktuálnu ponuku pravidelne obnovujeme. Ďalšie informácie, fotografie a dokumentáciu poskytneme vážnym záujemcom.
 
-### Kategórie ponuky
+### Výzva na kontakt
 
-- Plemenné býky
-- Jalovice
-- Teľné jalovice
-- Kravy
-- Teľatá
-- Úžitkový alebo zástavový dobytok
+> Máte záujem o našu produkciu alebo dlhodobú spoluprácu? Kontaktujte nás a informujte sa o aktuálnej dostupnosti.
 
-### Informácie pri každom zvierati
-
-- Aktuálne fotografie a video
-- Plemeno a kategória
-- Dátum narodenia
-- Hmotnosť
-- Pôvod alebo rodokmeň
-- Chovateľský status
-- Zdravotné informácie
-- Povaha
-- Cena s DPH alebo bez DPH
-- Dostupnosť
-- Možnosť dopravy
-- Dátum aktualizácie ponuky
-
-### Vzor ponuky
-
-> **Jalovica – [plemeno]**
->
-> Narodená: [dátum]  
-> Hmotnosť: [hmotnosť] kg  
-> Stav: [voľná, rezervovaná alebo predaná]  
-> Cena: [suma] € [s DPH alebo bez DPH]  
-> Lokalita: Behynce pri Tornali  
->
-> Pre informácie o pôvode, zdravotnom stave a podmienkach dopravy nás kontaktujte.
-
-Odporúčané tlačidlo pri každej ponuke:
-
-> Mám záujem o toto zviera
-
-## 5. Lesnícke služby
+## 4. Lesnícke služby
 
 ### Účel stránky
 
@@ -191,19 +115,11 @@ Pre každú skutočne poskytovanú službu má byť na stránke samostatný blok
 
 Presný zoznam okresov je pre zákazníkov aj internetové vyhľadávače užitočnejší než samotné označenie „juhozápadné Slovensko“.
 
-### Ako prebieha spolupráca
-
-1. Zákazník nám pošle lokalitu a opis prác.
-2. Dohodneme si obhliadku.
-3. Posúdime terén a rozsah zákazky.
-4. Pripravíme cenovú ponuku.
-5. Dohodneme realizáciu a odovzdanie prác.
-
 ### Výzva na kontakt
 
 > Pošlite nám obec, katastrálne územie, približnú výmeru a fotografie porastu. Ozveme sa vám a dohodneme ďalší postup.
 
-## 6. Referencie a galéria
+## 5. Referencie a galéria
 
 ### Účel stránky
 
@@ -234,7 +150,7 @@ Pri lesníckych referenciách je vhodné uviesť:
 
 Mená klientov ani presné polohy pozemkov sa nemajú zverejňovať bez ich súhlasu.
 
-## 7. Kontakt
+## 6. Kontakt
 
 ### Účel stránky
 
@@ -257,44 +173,6 @@ Umožniť zákazníkom čo najjednoduchšie kontaktovať spoločnosť.
 - Prevádzkové hodiny
 - Mapa farmy
 - Odkaz na pravidelne udržiavané sociálne siete
-
-### Kontaktný formulár
-
-- Meno alebo firma
-- Telefón
-- E-mail
-- Typ dopytu
-- Obec a okres
-- Opis požiadavky
-- Možnosť priložiť fotografie
-- Súhlas so spracovaním osobných údajov
-
-> Návštevu farmy si, prosím, dohodnite vopred telefonicky.
-
-## 8. Aktuality – voliteľná stránka
-
-Túto stránku má význam vytvoriť iba vtedy, ak ju bude niekto pravidelne aktualizovať. Môže obsahovať:
-
-- Nové zvieratá v ponuke
-- Sezónne informácie z farmy
-- Dokončené lesnícke zákazky
-- Zmeny prevádzkových hodín
-- Novú techniku
-
-Neaktuálna stránka s novinkami pôsobí horšie než web bez nej.
-
-## Spoločná päta webu
-
-Päta každej stránky by mala obsahovať:
-
-- Telefón a e-mail
-- Umiestnenie farmy
-- Firemné údaje
-- Oblasť poskytovania lesníckych služieb
-- Zásady ochrany osobných údajov
-- Nastavenia cookies
-- Obchodné alebo predajné podmienky, ak sa uplatňujú
-- Autorské práva
 
 ## Jazykové verzie
 
