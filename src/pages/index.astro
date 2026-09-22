@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCta from '../components/ContactCta.astro';
+import { site, whyUs } from '../data/site';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+	title={site.brand}
+	description="Farma v Behynciach pri Tornali. Poľnohospodárstvo, chov hovädzieho dobytka a lesnícke služby na juhozápadnom Slovensku."
+>
+	<section class="hero" aria-label="Úvod">
+		<div class="hero-media" aria-hidden="true"></div>
+		<div class="hero-content">
+			<p class="hero-brand">{site.brand}</p>
+			<h1>Farma v Behynciach pri Tornali. Lesnícke služby na juhozápadnom Slovensku.</h1>
+			<p>
+				Venujeme sa poľnohospodárstvu, chovu hovädzieho dobytka a poskytovaniu lesníckych služieb.
+				Naša farma sa nachádza v Behynciach pri Tornali, v regióne južného Gemera. Lesnícke služby
+				poskytujeme zákazníkom na juhozápadnom Slovensku.
+			</p>
+			<div class="actions">
+				<a class="btn btn-primary" href={`${base}polnohospodarstvo/#hovadzi-dobytok`}>Aktuálna ponuka dobytka</a>
+				<a class="btn btn-secondary" href={`${base}lesnicke-sluzby/`}>Dopyt na lesnícke služby</a>
+				<a class="btn btn-secondary" href={site.phone.href}>Zavolať nám</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="wrap">
+			<div class="section-head">
+				<h2>Hlavné oblasti podnikania</h2>
+				<p>Tri smery, ktoré spájajú farmu, chov a prácu v lese.</p>
+			</div>
+			<div class="split split-3">
+				<article class="area">
+					<h3>Poľnohospodárstvo</h3>
+					<p>
+						Hospodárime na pôde v okolí Behýniec a venujeme sa pestovaniu [plodiny alebo
+						produkty].
+					</p>
+					<p style="margin-top: 1rem;">
+						<a class="btn btn-outline" href={`${base}polnohospodarstvo/`}>Viac o poľnohospodárstve</a>
+					</p>
+				</article>
+				<article class="area">
+					<h3>Chov hovädzieho dobytka</h3>
+					<p>
+						Na našej farme chováme [plemeno alebo typ] hovädzí dobytok. Vybrané zvieratá ponúkame
+						na ďalší chov alebo predaj.
+					</p>
+					<p style="margin-top: 1rem;">
+						<a class="btn btn-outline" href={`${base}polnohospodarstvo/#hovadzi-dobytok`}>Ponuka dobytka</a>
+					</p>
+				</article>
+				<article class="area">
+					<h3>Lesnícke služby</h3>
+					<p>
+						Zabezpečujeme [ťažbu, približovanie, odvoz a ďalšie skutočne poskytované služby] pre
+						vlastníkov lesov, urbárske a pozemkové spoločenstvá, obce a firmy.
+					</p>
+					<p style="margin-top: 1rem;">
+						<a class="btn btn-outline" href={`${base}lesnicke-sluzby/`}>Lesnícke služby</a>
+					</p>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" style="padding-top: 0;">
+		<div class="wrap">
+			<div class="section-head">
+				<h2>Prečo si vybrať nás</h2>
+				<p>Priama dohoda, praktický prístup a jasný rozsah prác.</p>
+			</div>
+			<ul class="list-plain">
+				{whyUs.map((item) => <li>{item}</li>)}
+			</ul>
+		</div>
+	</section>
+
+	<ContactCta
+		title="Ozvite sa nám"
+		text="Máte záujem o dobytok, poľnohospodársku produkciu alebo lesnícke služby? Zavolajte nám alebo pošlite krátky dopyt."
+		primaryHref="/kontakt/"
+		primaryLabel="Kontakt"
+		secondaryHref={site.phone.href}
+		secondaryLabel="Zavolať"
+	/>
+</BaseLayout>

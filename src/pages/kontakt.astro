@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+	title="Kontakt"
+	description="Kontaktujte farmu AD-REM v Behynciach pri Tornali. Telefón, e-mail a adresa pre dopyty na dobytok a lesnícke služby."
+>
+	<section class="page-hero contact-hero">
+		<div class="wrap">
+			<p class="eyebrow">Kontakt</p>
+			<h1>Ozvite sa nám</h1>
+			<p>
+				Máte záujem o hovädzí dobytok, poľnohospodársku produkciu alebo lesnícke služby? Zavolajte
+				nám alebo napíšte — ozveme sa čo najskôr.
+			</p>
+			<div class="actions" style="margin-top: 1.75rem;">
+				<a class="btn btn-dark" href={site.phone.href}>Zavolať</a>
+				<a class="btn btn-outline" href={site.email.href}>Napísať e-mail</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section contact-section" style="padding-top: 0;">
+		<div class="wrap contact-layout">
+			<div class="contact-reach">
+				<h2>Priamy kontakt</h2>
+				<a class="contact-channel" href={site.phone.href}>
+					<span class="contact-channel-label">Telefón</span>
+					<span class="contact-channel-value">{site.phone.display}</span>
+					<span class="contact-channel-hint">Zavolať teraz</span>
+				</a>
+				<a class="contact-channel" href={site.email.href}>
+					<span class="contact-channel-label">E-mail</span>
+					<span class="contact-channel-value">{site.email.display}</span>
+					<span class="contact-channel-hint">Odoslať správu</span>
+				</a>
+			</div>
+
+			<div class="contact-meta">
+				<h2>Farma a spoločnosť</h2>
+				<dl class="contact-details">
+					<div>
+						<dt>Spoločnosť</dt>
+						<dd>{site.company.name}</dd>
+					</div>
+					<div>
+						<dt>Kontaktná osoba</dt>
+						<dd>{site.company.contactPerson}</dd>
+					</div>
+					<div>
+						<dt>Adresa</dt>
+						<dd>{site.location}</dd>
+					</div>
+					<div>
+						<dt>IČO</dt>
+						<dd>{site.company.ico}</dd>
+					</div>
+					<div>
+						<dt>DIČ</dt>
+						<dd>{site.company.dic}</dd>
+					</div>
+					<div>
+						<dt>IČ DPH</dt>
+						<dd>{site.company.icDph}</dd>
+					</div>
+				</dl>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

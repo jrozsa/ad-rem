@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCta from '../components/ContactCta.astro';
+import { site } from '../data/site';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+	title="Poľnohospodárstvo"
+	description="Poľnohospodárska výroba a chov hovädzieho dobytka v Behynciach pri Tornali. Pestované plodiny, hospodárenie a aktuálna ponuka."
+>
+	<section class="page-hero">
+		<div class="wrap">
+			<p class="eyebrow">Poľnohospodárstvo</p>
+			<h1>Poľnohospodárska výroba v Behynciach</h1>
+			<p>
+				Na pôde v okolí Behýniec pri Tornali pestujeme [zoznam plodín] a zabezpečujeme [ďalšie
+				činnosti]. Naším cieľom je stabilná produkcia, zodpovedná starostlivosť o pôdu a spoľahlivá
+				spolupráca s odberateľmi.
+			</p>
+		</div>
+	</section>
+
+	<section class="section" style="padding-top: 0;">
+		<div class="wrap content-block">
+			<h2>Čo pestujeme a ako hospodárime</h2>
+			<ul>
+				<li>Pestované plodiny</li>
+				<li>Výmera obhospodarovanej pôdy</li>
+				<li>Spôsob hospodárenia</li>
+				<li>Sezónnosť produkcie</li>
+				<li>Predaj úrody alebo krmiva</li>
+				<li>Veľkoobchodné možnosti</li>
+				<li>Osobný odber a doprava</li>
+				<li>Mechanizačné služby, ak ich spoločnosť poskytuje</li>
+			</ul>
+			<p class="note">
+				Texty v hranatých zátvorkách nahradíte skutočnými údajmi o plodinách, výmere a spôsobe
+				predaja.
+			</p>
+		</div>
+	</section>
+
+	<section id="hovadzi-dobytok" class="section" style="padding-top: 0;">
+		<div class="wrap content-block">
+			<h2>Hovädzí dobytok z nášho chovu</h2>
+			<p>
+				Na farme v Behynciach chováme [plemeno] hovädzí dobytok. Zvieratám zabezpečujeme pravidelnú
+				starostlivosť, vhodnú výživu a podmienky zodpovedajúce ich veku a spôsobu chovu.
+			</p>
+			<h3 style="margin-top: 1.5rem; font-size: 1.25rem;">Aktuálna ponuka</h3>
+			<p>
+				Aktuálnu ponuku pravidelne obnovujeme. Ďalšie informácie, fotografie a dokumentáciu
+				poskytneme vážnym záujemcom.
+			</p>
+			<ul>
+				<li>Plemeno / typ: [plemeno alebo typ]</li>
+				<li>Kategória zvierat: [kategória]</li>
+				<li>Vek a hmotnosť: [údaje]</li>
+				<li>Účel: ďalší chov alebo predaj</li>
+			</ul>
+			<p class="note">
+				Po doplnení konkrétnych zvierat sem môžete vložiť krátke karty ponuky s fotografiou a
+				základnými údajmi.
+			</p>
+			<div class="actions" style="margin-top: 0.5rem;">
+				<a class="btn btn-dark" href={site.phone.href}>Zavolať o ponuku</a>
+				<a class="btn btn-outline" href={`${base}kontakt/`}>Napísať dopyt</a>
+			</div>
+		</div>
+	</section>
+
+	<ContactCta
+		title="Máte záujem o našu produkciu?"
+		text="Kontaktujte nás a informujte sa o aktuálnej dostupnosti úrody, dobytka alebo o možnosti dlhodobej spolupráce."
+		primaryHref="/kontakt/"
+		primaryLabel="Kontaktovať"
+		secondaryHref={site.phone.href}
+		secondaryLabel="Zavolať"
+	/>
+</BaseLayout>
