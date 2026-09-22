@@ -1,0 +1,25 @@
+---
+import { nav, site } from '../data/site';
+
+const base = import.meta.env.BASE_URL;
+
+function hrefFor(path: string) {
+	if (path === '/') return base;
+	return `${base}${path.replace(/^\//, '')}`;
+}
+---
+
+<footer class="site-footer">
+	<div class="wrap footer-inner">
+		<div>
+			<div class="footer-brand">{site.brand}</div>
+			<p class="footer-meta">
+				{site.tagline}<br />
+				{site.location}
+			</p>
+		</div>
+		<nav class="footer-links" aria-label="Pätičková navigácia">
+			{nav.map((item) => <a href={hrefFor(item.href)}>{item.label}</a>)}
+		</nav>
+	</div>
+</footer>

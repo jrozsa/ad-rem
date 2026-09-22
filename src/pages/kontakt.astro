@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+	title="Kontakt"
+	description="Kontaktujte farmu AD-REM v Behynciach pri Tornali. Telefón, e-mail a adresa pre dopyty na dobytok a lesnícke služby."
+>
+	<section class="page-hero">
+		<div class="wrap">
+			<p class="eyebrow">Kontakt</p>
+			<h1>Kontaktujte nás</h1>
+			<p>
+				Máte záujem o hovädzí dobytok, poľnohospodársku produkciu alebo lesnícke služby? Zavolajte
+				nám alebo odošlite krátky dopyt.
+			</p>
+		</div>
+	</section>
+
+	<section class="section" style="padding-top: 0;">
+		<div class="wrap contact-grid">
+			<div>
+				<ul class="contact-list">
+					<li>
+						<span>Spoločnosť</span>
+						<strong>{site.company.name}</strong>
+					</li>
+					<li>
+						<span>Kontaktná osoba</span>
+						<strong>{site.company.contactPerson}</strong>
+					</li>
+					<li>
+						<span>Adresa</span>
+						<strong>{site.location}</strong>
+					</li>
+					<li>
+						<span>Telefón</span>
+						<a href={site.phone.href}>{site.phone.display}</a>
+					</li>
+					<li>
+						<span>E-mail</span>
+						<a href={site.email.href}>{site.email.display}</a>
+					</li>
+					<li>
+						<span>IČO / DIČ / IČ DPH</span>
+						<strong>
+							{site.company.ico}, {site.company.dic}, {site.company.icDph}
+						</strong>
+					</li>
+					<li>
+						<span>Prevádzkové hodiny</span>
+						<strong>{site.company.hours}</strong>
+					</li>
+					<li>
+						<span>Sociálne siete</span>
+						<a href={site.social.href}>{site.social.label}</a>
+					</li>
+				</ul>
+				<div class="actions" style="margin-top: 1.5rem;">
+					<a class="btn btn-dark" href={site.phone.href}>Zavolať</a>
+					<a class="btn btn-outline" href={site.email.href}>Napísať e-mail</a>
+				</div>
+			</div>
+			<div class="map-placeholder" role="img" aria-label="Mapa farmy v Behynciach">
+				<div>
+					<strong>Mapa farmy</strong>
+					<p style="margin-top: 0.5rem;">
+						Behynce, 982 01 Tornaľa<br />
+						Sem vložíte vloženú mapu alebo odkaz na mapový podklad.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

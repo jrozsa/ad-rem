@@ -1,0 +1,50 @@
+---
+import { nav, site } from '../data/site';
+
+const base = import.meta.env.BASE_URL;
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+function hrefFor(path: string) {
+	if (path === '/') return base;
+	return `${base}${path.replace(/^\//, '')}`;
+}
+
+function isCurrent(path: string) {
+	const normalized = path.replace(/\/$/, '') || '/';
+	const full = normalized === '/' ? base.replace(/\/$/, '') || '/' : `${base}${normalized.replace(/^\//, '')}`.replace(/\/$/, '');
+	const current = currentPath === '/' ? (base.replace(/\/$/, '') || '/') : currentPath;
+	return full === current || current.endsWith(normalized);
+}
+---
+
+<header class="site-header">
+	<div class="wrap header-inner">
+		<a class="brand" href={hrefFor('/')}>
+			<span class="brand-name">{site.brand}</span>
+			<span class="brand-tag">{site.tagline}</span>
+		</a>
+		<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+			Menu
+		</button>
+		<nav class="nav" id="site-nav" aria-label="Hlavná navigácia">
+			{
+				nav.map((item) => (
+					<a href={hrefFor(item.href)} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+						{item.label}
+					</a>
+				))
+			}
+		</nav>
+	</div>
+</header>
+
+<script>
+	const toggle = document.querySelector('.nav-toggle');
+	const nav = document.querySelector('#site-nav');
+
+	toggle?.addEventListener('click', () => {
+		const open = toggle.getAttribute('aria-expanded') === 'true';
+		toggle.setAttribute('aria-expanded', String(!open));
+		nav?.classList.toggle('is-open', !open);
+	});
+</script>

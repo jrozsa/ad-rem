@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCta from '../components/ContactCta.astro';
+import { forestryServices } from '../data/site';
+---
+
+<BaseLayout
+	title="Lesnícke služby"
+	description="Lesnícke služby na juhozápadnom Slovensku: ťažba, približovanie, odvoz, kalamitná ťažba a obnova lesa."
+>
+	<section class="page-hero">
+		<div class="wrap">
+			<p class="eyebrow">Lesníctvo</p>
+			<h1>Lesnícke služby na juhozápadnom Slovensku</h1>
+			<p>
+				Poskytujeme lesnícke služby pre súkromných vlastníkov, pozemkové a urbárske spoločenstvá,
+				obce a firmy. Každú zákazku posudzujeme podľa lokality, terénu, prístupových možností a
+				požadovaného rozsahu prác.
+			</p>
+		</div>
+	</section>
+
+	<section class="section" style="padding-top: 0;">
+		<div class="wrap">
+			<div class="section-head">
+				<h2>Ponúkané služby</h2>
+				<p>Každú službu realizujeme podľa dohody a skutočných podmienok na mieste.</p>
+			</div>
+			<div>
+				{
+					forestryServices.map((service) => (
+						<article class="service-block">
+							<h3>{service.title}</h3>
+							<p>{service.description}</p>
+						</article>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<section class="section" style="padding-top: 0;">
+		<div class="wrap content-block">
+			<h2>Oblasť pôsobenia</h2>
+			<p>
+				Zákazky realizujeme na juhozápadnom Slovensku, najmä v okresoch [presný zoznam okresov]. Pri
+				väčších zákazkách je možná dohoda aj mimo bežnej oblasti pôsobnosti.
+			</p>
+		</div>
+	</section>
+
+	<ContactCta
+		title="Pošlite nám dopyt"
+		text="Uveďte obec, katastrálne územie, približnú výmeru a fotografie porastu. Ozveme sa vám a dohodneme ďalší postup."
+		primaryHref="/kontakt/"
+		primaryLabel="Kontaktovať"
+	/>
+</BaseLayout>

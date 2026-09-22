@@ -1,0 +1,40 @@
+---
+interface Props {
+	title: string;
+	text: string;
+	primaryHref: string;
+	primaryLabel: string;
+	secondaryHref?: string;
+	secondaryLabel?: string;
+}
+
+const { title, text, primaryHref, primaryLabel, secondaryHref, secondaryLabel } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+function withBase(path: string) {
+	if (path.startsWith('tel:') || path.startsWith('mailto:') || path.startsWith('http')) {
+		return path;
+	}
+	if (path === '/') return base;
+	return `${base}${path.replace(/^\//, '')}`;
+}
+---
+
+<section class="cta-band">
+	<div class="wrap">
+		<div>
+			<h2>{title}</h2>
+			<p>{text}</p>
+		</div>
+		<div class="actions">
+			<a class="btn btn-primary" href={withBase(primaryHref)}>{primaryLabel}</a>
+			{
+				secondaryHref && secondaryLabel && (
+					<a class="btn btn-secondary" href={withBase(secondaryHref)}>
+						{secondaryLabel}
+					</a>
+				)
+			}
+		</div>
+	</div>
+</section>
