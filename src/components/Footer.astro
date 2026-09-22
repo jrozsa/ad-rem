@@ -11,12 +11,10 @@ function hrefFor(path: string) {
 
 <footer class="site-footer">
 	<div class="wrap footer-inner">
-		<div>
+		<div class="footer-brand-block">
 			<div class="footer-brand">{site.brand}</div>
-			<p class="footer-meta">
-				{site.tagline}<br />
-				{site.location}
-			</p>
+			<p class="footer-meta">{site.tagline}</p>
+			<p class="footer-meta">{site.location}</p>
 		</div>
 		<nav class="footer-links" aria-label="Pätičková navigácia">
 			{nav.map((item) => <a href={hrefFor(item.href)}>{item.label}</a>)}

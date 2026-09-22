@@ -8,5 +8,6 @@ export default defineConfig({
 	trailingSlash: 'always',
 	redirects: {
 		'/dobytok': '/ad-rem/polnohospodarstvo/#hovadzi-dobytok',
+		'/galeria': '/ad-rem/',
 	},
 });

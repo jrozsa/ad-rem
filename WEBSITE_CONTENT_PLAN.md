@@ -119,38 +119,7 @@ Presný zoznam okresov je pre zákazníkov aj internetové vyhľadávače užito
 
 > Pošlite nám obec, katastrálne územie, približnú výmeru a fotografie porastu. Ozveme sa vám a dohodneme ďalší postup.
 
-## 5. Referencie a galéria
-
-### Účel stránky
-
-Ukázať reálnu prácu spoločnosti a zvýšiť dôveru potenciálnych zákazníkov.
-
-### Úvodný text
-
-> **Naša práca v praxi**
->
-> Pozrite si fotografie z našej farmy, chovu hovädzieho dobytka a realizovaných lesníckych zákaziek.
-
-### Kategórie galérie
-
-- Farma v Behynciach
-- Hovädzí dobytok
-- Poľnohospodárske práce
-- Lesnícke práce
-- Technika
-- Fotografie pred realizáciou a po realizácii
-
-Pri lesníckych referenciách je vhodné uviesť:
-
-- Druh vykonanej práce
-- Všeobecnú lokalitu
-- Približný rozsah
-- Použitú techniku
-- Výsledok
-
-Mená klientov ani presné polohy pozemkov sa nemajú zverejňovať bez ich súhlasu.
-
-## 6. Kontakt
+## 5. Kontakt
 
 ### Účel stránky
 
@@ -170,9 +139,6 @@ Umožniť zákazníkom čo najjednoduchšie kontaktovať spoločnosť.
 - Telefón
 - E-mail
 - IČO, DIČ a IČ DPH, ak sa uplatňujú
-- Prevádzkové hodiny
-- Mapa farmy
-- Odkaz na pravidelne udržiavané sociálne siete
 
 ## Jazykové verzie
 

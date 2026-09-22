@@ -17,11 +17,6 @@ export const site = {
 		ico: '[IČO]',
 		dic: '[DIČ]',
 		icDph: '[IČ DPH]',
-		hours: '[Prevádzkové hodiny]',
-	},
-	social: {
-		label: '[Sociálne siete]',
-		href: '#',
 	},
 } as const;
 
@@ -29,7 +24,6 @@ export const nav = [
 	{ href: '/', label: 'Domov' },
 	{ href: '/polnohospodarstvo/', label: 'Poľnohospodárstvo' },
 	{ href: '/lesnicke-sluzby/', label: 'Lesnícke služby' },
-	{ href: '/galeria/', label: 'Galéria' },
 	{ href: '/kontakt/', label: 'Kontakt' },
 ] as const;
 
@@ -88,13 +82,4 @@ export const whyUs = [
 	'Vlastná technika',
 	'Jasne dohodnutý rozsah prác',
 	'Osobná obhliadka zákazky',
-] as const;
-
-export const galleryCategories = [
-	'Farma v Behynciach',
-	'Hovädzí dobytok',
-	'Poľnohospodárske práce',
-	'Lesnícke práce',
-	'Technika',
-	'Pred realizáciou a po realizácii',
 ] as const;

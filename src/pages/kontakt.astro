@@ -7,69 +7,65 @@ import { site } from '../data/site';
 	title="Kontakt"
 	description="Kontaktujte farmu AD-REM v Behynciach pri Tornali. Telefón, e-mail a adresa pre dopyty na dobytok a lesnícke služby."
 >
-	<section class="page-hero">
+	<section class="page-hero contact-hero">
 		<div class="wrap">
 			<p class="eyebrow">Kontakt</p>
-			<h1>Kontaktujte nás</h1>
+			<h1>Ozvite sa nám</h1>
 			<p>
 				Máte záujem o hovädzí dobytok, poľnohospodársku produkciu alebo lesnícke služby? Zavolajte
-				nám alebo odošlite krátky dopyt.
+				nám alebo napíšte — ozveme sa čo najskôr.
 			</p>
+			<div class="actions" style="margin-top: 1.75rem;">
+				<a class="btn btn-dark" href={site.phone.href}>Zavolať</a>
+				<a class="btn btn-outline" href={site.email.href}>Napísať e-mail</a>
+			</div>
 		</div>
 	</section>
 
-	<section class="section" style="padding-top: 0;">
-		<div class="wrap contact-grid">
-			<div>
-				<ul class="contact-list">
-					<li>
-						<span>Spoločnosť</span>
-						<strong>{site.company.name}</strong>
-					</li>
-					<li>
-						<span>Kontaktná osoba</span>
-						<strong>{site.company.contactPerson}</strong>
-					</li>
-					<li>
-						<span>Adresa</span>
-						<strong>{site.location}</strong>
-					</li>
-					<li>
-						<span>Telefón</span>
-						<a href={site.phone.href}>{site.phone.display}</a>
-					</li>
-					<li>
-						<span>E-mail</span>
-						<a href={site.email.href}>{site.email.display}</a>
-					</li>
-					<li>
-						<span>IČO / DIČ / IČ DPH</span>
-						<strong>
-							{site.company.ico}, {site.company.dic}, {site.company.icDph}
-						</strong>
-					</li>
-					<li>
-						<span>Prevádzkové hodiny</span>
-						<strong>{site.company.hours}</strong>
-					</li>
-					<li>
-						<span>Sociálne siete</span>
-						<a href={site.social.href}>{site.social.label}</a>
-					</li>
-				</ul>
-				<div class="actions" style="margin-top: 1.5rem;">
-					<a class="btn btn-dark" href={site.phone.href}>Zavolať</a>
-					<a class="btn btn-outline" href={site.email.href}>Napísať e-mail</a>
-				</div>
+	<section class="section contact-section" style="padding-top: 0;">
+		<div class="wrap contact-layout">
+			<div class="contact-reach">
+				<h2>Priamy kontakt</h2>
+				<a class="contact-channel" href={site.phone.href}>
+					<span class="contact-channel-label">Telefón</span>
+					<span class="contact-channel-value">{site.phone.display}</span>
+					<span class="contact-channel-hint">Zavolať teraz</span>
+				</a>
+				<a class="contact-channel" href={site.email.href}>
+					<span class="contact-channel-label">E-mail</span>
+					<span class="contact-channel-value">{site.email.display}</span>
+					<span class="contact-channel-hint">Odoslať správu</span>
+				</a>
 			</div>
-			<div class="map-placeholder" role="img" aria-label="Mapa farmy v Behynciach">
-				<div>
-					<strong>Mapa farmy</strong>
-					<p style="margin-top: 0.5rem;">
-						Behynce, 982 01 Tornaľa<br />
-						Sem vložíte vloženú mapu alebo odkaz na mapový podklad.
-					</p>
-				</div>
+
+			<div class="contact-meta">
+				<h2>Farma a spoločnosť</h2>
+				<dl class="contact-details">
+					<div>
+						<dt>Spoločnosť</dt>
+						<dd>{site.company.name}</dd>
+					</div>
+					<div>
+						<dt>Kontaktná osoba</dt>
+						<dd>{site.company.contactPerson}</dd>
+					</div>
+					<div>
+						<dt>Adresa</dt>
+						<dd>{site.location}</dd>
+					</div>
+					<div>
+						<dt>IČO</dt>
+						<dd>{site.company.ico}</dd>
+					</div>
+					<div>
+						<dt>DIČ</dt>
+						<dd>{site.company.dic}</dd>
+					</div>
+					<div>
+						<dt>IČ DPH</dt>
+						<dd>{site.company.icDph}</dd>
+					</div>
+				</dl>
 			</div>
 		</div>
 	</section>
